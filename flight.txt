@@ -1,0 +1,4 @@
+Ufa;Kazan;5000;4900
+Saint-Petersburg;Moscow;1200;1100
+Moscow;Kazan;3000;2900
+Kazan;Ufa;1000;900
