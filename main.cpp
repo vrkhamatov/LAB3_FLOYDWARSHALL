@@ -14,12 +14,12 @@ int main()
 
     Pair<List<string>, double> optimalSolution = calculatePath(ticketsList, "Saint-Petersburg", "Ufa");
 
-    cout << "Âûáðàííûé ïóòü èç " << optimalSolution.first.head->value << " â " << optimalSolution.first.last->value << endl;
+    cout << "Ð’Ñ‹Ð±Ñ€Ð°Ð½Ð½Ñ‹Ð¹ Ð¿ÑƒÑ‚ÑŒ Ð¸Ð· " << optimalSolution.first.head->value << " Ð² " << optimalSolution.first.last->value << endl;
 
-    cout << "Îïòèìàëüíàÿ öåíà äëÿ ýòîãî ïóòè: " << optimalSolution.second << endl;
+    cout << "ÐžÐ¿Ñ‚Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ñ†ÐµÐ½Ð° Ð´Ð»Ñ ÑÑ‚Ð¾Ð³Ð¾ Ð¿ÑƒÑ‚Ð¸: " << optimalSolution.second << endl;
 
     if (optimalSolution.first.size > 2){
-        cout << "Îïòèìàëüíûé ïóòü: " << endl;
+        cout << "ÐžÐ¿Ñ‚Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð¿ÑƒÑ‚ÑŒ: " << endl;
         auto itr = optimalSolution.first.create_iterator();
         while (itr->has_next())
         {
@@ -29,5 +29,5 @@ int main()
         }
     }
     else
-        cout << "Îïòèìàëüíûé ïóòü - ïðÿìîé: " << optimalSolution.first.head->value << " -> " << optimalSolution.first.last->value;
+        cout << "ÐžÐ¿Ñ‚Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð¿ÑƒÑ‚ÑŒ - Ð¿Ñ€ÑÐ¼Ð¾Ð¹: " << optimalSolution.first.head->value << " -> " << optimalSolution.first.last->value;
 }
